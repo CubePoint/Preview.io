@@ -16,29 +16,62 @@
     <meta name="keywords " content="key,words" />
     <meta name="description" content="somethink about the website" />
     <meta name="robots" content="cubepoint,demo,frontend" />
-    <base href="" target="_self" />
+    <base href="" target="_blank" />
+
+    <style type="text/css">
+    	article {
+    		display: flex;
+    		flex-flow: row wrap;
+    		justify-content: center;
+    		align-items: center;
+    	}
+    	.card {
+    		box-sizing: border-box;
+    		display: block;
+    		flex-grow:0;
+    		flex-shrink: 0;
+    		width: 250px;
+    		height: 250px;
+    		margin: 20px;
+    		box-shadow: 0px 0px 10px black;
+    		padding-top: 50px; 
+    		text-align: center;
+    		background: rgba(0,0,0,0.1);
+    		transition: background 250ms;
+    	}
+    	.card:hover {
+       		background: rgba(50,150,50,0.1);
+    	}
+    	.tcenter {
+    		text-align: center;
+    	}
+    </style>
 </head>
 
 <body>
-
-  <header><h1><ruby>
+  <header><h1 class="tcenter"><ruby>
     前端作品
     <rtc>FontEnd-Demo</rtc>
   </ruby></h1></header>
   
-  <article><dl>
-    <dt>公司官网</dt>
-    <dd>Vue-cli</dd>
-      <dd><a href="http://www.cubepoint.cn:82">http://www.cubepoint.cn:82</a></dd>
-    
-    <dt>H5小游戏</dt>
-    <dd>LayaAir</dd>
-    <dd><a href="http://www.cubepoint.cn:81/pageDemo/static/superStar.html">http://www.cubepoint.cn:81/pageDemo/static/superStar.html</a></dd>
-    
-    <dt>响应式页面</dt>
-    <dd>Bootstrap</dd>
-    <dd><a href="http://www.cubepoint.cn:81/pageDemo/static/indienova.html">http://www.cubepoint.cn:81/pageDemo/static/indienova.html</a></dd>
-  </dl></article>
+  <article>
+	  <a class="card" href="http://www.cubepoint.cn:82">
+	  	<h2>公司官网</h2>
+	  	<p>Vue+VueRouter+Webpack</p>
+	  </a>
+	  <a class="card" href="http://www.cubepoint.cn:81/pageDemo/static/indienova.html">
+	  	<h2>响应式页面</h2>
+	  	<p>Bootstrap制作的响应式页面</p>
+	  </a>
+	  <a class="card" href="http://www.cubepoint.cn:81/pageDemo/static/superStar.html">
+	  	<h2>H5小游戏</h2>
+	  	<p>LayaAir引擎制作</p>
+	  </a>
+	  <a class="card" href="https://s1.ax1x.com/2018/03/05/96cL6S.jpg">
+	  	<h2>佛职助手</h2>
+	  	<p>微信小程序</p>
+	  </a>
+  </article>
   
   <footer></footer>
 
