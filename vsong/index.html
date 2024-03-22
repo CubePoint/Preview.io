@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/vsong/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="referrer" content="same-origin">
+    <meta name="theme-color" content="#212121" />
+    <link rel="manifest" href="./manifest.json">
+    <title>VSONG</title>
+    <style>
+      #bridgeIframe {
+        font-size: 0;
+        width: 0;
+        height: 0;
+        border: none;
+        display: block;
+      }
+      #bridgeIframe.active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      (function(){
+        function setRemUnit () {
+          var htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+          var htmlDom = document.getElementsByTagName('html')[0];
+          if (htmlWidth < 667) {
+            htmlDom.style.fontSize= htmlWidth / 10 + 'px';
+          } else if (htmlWidth <= 1024) {
+            htmlDom.style.fontSize = '40px';
+          } else {
+            htmlDom.style.fontSize = '44px';
+          }
+        }
+        setRemUnit();
+        window.addEventListener('resize', function () {
+          setRemUnit()
+        });
+        window.addEventListener('pageshow', function(e) {
+          if (e.persisted) {
+            setRemUnit();
+          }
+        });
+      })()
+    </script>
+    <script type="module" crossorigin src="/vsong/assets/index.14938323.js"></script>
+    <link rel="modulepreload" href="/vsong/assets/vendor.8c1ac885.js">
+    <link rel="stylesheet" href="/vsong/assets/index.cfc7b6d9.css">
+  </head>
+  <body>
+    <iframe id="bridgeIframe" tabindex="1"></iframe>
+    <div id="app"></div>
+    
+  </body>
+</html>

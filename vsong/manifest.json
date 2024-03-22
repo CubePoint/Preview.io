@@ -1,0 +1,19 @@
+{
+  "name": "VSONG",
+  "short_name": "VSONG",
+  "start_url": ".",
+  "display": "fullscreen",
+  "background_color": "#212121",
+  "theme_color": "#212121",
+  "description": "VSONG",
+  "icons": [        {
+    "src": "./pwa/icons/icon-32.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  },
+  {
+      "src": "./pwa/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+  }]
+}

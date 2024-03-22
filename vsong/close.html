@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html, body { margin: 0;padding: 0;height: 100%;background: #212121;user-select: none; }
+      .mainbox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .mainbox-tip {
+        color: #999;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      .mainbox-btn {
+        margin-top: 24px;
+        border-radius: 24px;
+        background-color: #1989fa;
+        padding: 10px 36px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        color: #eee;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainbox">
+      <div class="mainbox-tip">VSONG已关闭</div>
+      <div class="mainbox-btn" onclick="location.replace('./')">重新打开</div>
+    </div>
+  </body>
+</html>
+
+<script>
+</script>
