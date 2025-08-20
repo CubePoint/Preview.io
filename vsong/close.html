@@ -46,21 +46,10 @@
   <body>
     <div class="mainbox">
       <div class="mainbox-tip">VSONG已关闭</div>
-      <!-- <div class="mainbox-btn" onclick="location.replace('./')">重新打开</div> -->
-      <div class="mainbox-btn" onclick="test1()">重新打开1</div>
-      <div class="mainbox-btn" onclick="test2()">重新打开2</div>
+      <div class="mainbox-btn" onclick="location.replace('./')">重新打开</div>
     </div>
   </body>
 </html>
 
 <script>
-  function test1() {
-    showDirectoryPicker()
-  }
-  function test2() {
-    if ('launchQueue' in window && 'files' in LaunchParams.prototype) {
-      // The File Handling API is supported.
-      alert("The File Handling API is supported.")
-    }
-  }
 </script>
